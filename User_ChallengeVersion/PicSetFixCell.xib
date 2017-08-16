@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="iXZ-nf-rKG" customClass="PicSetFixCell" customModule="User_ChallengeVersion" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iXZ-nf-rKG" id="P8q-19-2Xs">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="129.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palmer accused of being 'less than frank' as liquidators seek to freeze his assets" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jK7-VU-Rvs">
+                        <rect key="frame" x="8" y="8" width="157" height="64.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.0085597652941942215" green="0.48663592338562012" blue="0.76741516590118408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hvc-Uy-tGq">
+                        <rect key="frame" x="0.0" y="128.5" width="320" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Jvh-o8-AvI"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zmH-SI-Zhb">
+                        <rect key="frame" x="180" y="0.0" width="140" height="129.5"/>
+                        <color key="backgroundColor" red="0.97900837659999995" green="0.6450610161" blue="0.3196282983" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="BKY-kF-hDP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-12-20 10：35" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwX-dj-RjJ">
+                        <rect key="frame" x="8" y="113.5" width="119" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zmH-SI-Zhb" firstAttribute="bottom" secondItem="P8q-19-2Xs" secondAttribute="bottomMargin" constant="8" id="3Ok-MQ-4hT"/>
+                    <constraint firstAttribute="trailing" secondItem="Hvc-Uy-tGq" secondAttribute="trailing" id="6aU-R2-hYc"/>
+                    <constraint firstAttribute="bottom" secondItem="RwX-dj-RjJ" secondAttribute="bottom" id="W9d-7T-5RG"/>
+                    <constraint firstItem="zmH-SI-Zhb" firstAttribute="leading" secondItem="jK7-VU-Rvs" secondAttribute="trailing" constant="15" id="YC1-mH-ANK"/>
+                    <constraint firstItem="Hvc-Uy-tGq" firstAttribute="leading" secondItem="P8q-19-2Xs" secondAttribute="leading" id="ZdD-c1-e7L"/>
+                    <constraint firstAttribute="bottom" secondItem="Hvc-Uy-tGq" secondAttribute="bottom" id="fS4-4N-2TQ"/>
+                    <constraint firstItem="jK7-VU-Rvs" firstAttribute="top" secondItem="P8q-19-2Xs" secondAttribute="topMargin" id="jWU-KT-Wf3"/>
+                    <constraint firstItem="zmH-SI-Zhb" firstAttribute="top" secondItem="P8q-19-2Xs" secondAttribute="top" id="mJi-7l-O9G"/>
+                    <constraint firstItem="jK7-VU-Rvs" firstAttribute="leading" secondItem="P8q-19-2Xs" secondAttribute="leadingMargin" id="mh3-WB-EdI"/>
+                    <constraint firstItem="RwX-dj-RjJ" firstAttribute="leading" secondItem="jK7-VU-Rvs" secondAttribute="leading" id="npP-JH-tOo"/>
+                    <constraint firstItem="zmH-SI-Zhb" firstAttribute="trailing" secondItem="P8q-19-2Xs" secondAttribute="trailingMargin" constant="8" id="p92-k2-V8y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="LogoImageView" destination="zmH-SI-Zhb" id="JLO-2P-89D"/>
+                <outlet property="TimerText" destination="RwX-dj-RjJ" id="WL2-UO-1ZW"/>
+                <outlet property="TitleText" destination="jK7-VU-Rvs" id="M4v-4O-Erc"/>
+            </connections>
+            <point key="canvasLocation" x="-307" y="-79"/>
+        </tableViewCell>
+    </objects>
+</document>
